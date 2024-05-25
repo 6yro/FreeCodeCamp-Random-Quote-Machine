@@ -1,6 +1,7 @@
 # Random Quote Machine
 
 ## This is the solution to FreeCodeCamp Front End Libraries Projects - Build a Random Quote Machine
+https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-random-quote-machine
 
 Note: React 18 has known incompatibilities with the tests for this project (see issue)
 
