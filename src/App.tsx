@@ -1,24 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+
+import { getRandomQuote } from "./utils/getRandomQuote";
 
 function App() {
+  const [quote, setQuote] = useState(getRandomQuote());
+
+  const handleClick = () => {
+    const newQuote = getRandomQuote();
+
+    if (newQuote.text !== quote.text) {
+      setQuote(newQuote);
+    } else handleClick();
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="quote-box">
+      <div id="text">{quote.text}</div>
+      <div id="author">{quote.author}</div>
+      <button id="new-quote" onClick={handleClick} className="quote-btn">
+        New Quote
+      </button>
+      <a
+        href="twitter.com/intent/tweet"
+        id="tweet-quote"
+        target="_blank"
+        className="quote-btn"
+      >
+        Tweet
+      </a>
     </div>
   );
 }
