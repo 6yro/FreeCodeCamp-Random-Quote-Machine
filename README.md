@@ -2,6 +2,7 @@
 
 ## This is the solution to [FreeCodeCamp Front End Libraries Projects - Build a Random Quote Machine](https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-random-quote-machine)
 
+## You can see live demo [here](https://free-code-camp-random-quote-machine.vercel.app/)
 
 Note: React 18 has known incompatibilities with the tests for this project (see issue)
 
@@ -37,4 +38,4 @@ You can build your project by using this CodePen template and clicking Save to c
 
 Once you're done, submit the URL to your working project with all its tests passing.
 
-Note: Twitter does not allow links to be loaded in an iframe. Try using the target="_blank" or target="_top" attribute on the #tweet-quote element if your tweet won't load. target="_top" will replace the current tab so make sure your work is saved.
+Note: Twitter does not allow links to be loaded in an iframe. Try using the target="\_blank" or target="\_top" attribute on the #tweet-quote element if your tweet won't load. target="\_top" will replace the current tab so make sure your work is saved.
